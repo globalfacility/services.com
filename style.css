@@ -35,7 +35,6 @@ body {
   font-weight: 800;
   font-size: 1.5rem;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .nav-links {
@@ -397,14 +396,6 @@ body {
   }
 }
 
-
-/* .paypal-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-} */
-
 #paypal-container-9NMX2XWW9SN6J {
   text-align: center;
 }
@@ -417,6 +408,7 @@ body {
   display: flex;
   justify-content: space-between;
   
+  width: 100%; 
 }
 
 .pricing h2 {
@@ -427,7 +419,7 @@ body {
 }
 .paypal-left-content {
   padding: 0px 70px 0 0;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 #desc-label{
@@ -492,12 +484,12 @@ section#about {
 .htmega-counter-number {
   font-size: 2rem;
   font-weight: bold;
-  color: #f47d06;
+  color: #007bff;
 }
 
 .htmega-suffix {
   font-size: 1.2rem;
-  color: #f47d06;
+  color: #555;
 }
 
 .htmega-counter-title {
@@ -510,11 +502,11 @@ section#about {
   font-size: 16px;
   padding: 10px 40px 10px 10px;
   background-color: transparent;
-  color: #f47d06;
+  color: blueviolet;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
-  border: 1px solid #f47d06;
+  border: 1px solid blueviolet;
 }
 .primary-btn::after {
   content: "";
@@ -552,23 +544,6 @@ section#about {
   position: relative;
   margin-bottom: 40px; /* Adjust spacing as needed */
 }
-
-.steps-grid::after {
-  /* content: ''; */
-  position: absolute;
-  bottom: 41%;
-  right: 13%;
-  transform: translateX(-50%);
-  background-image: url('images/arrows.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
-  rotate: 90deg;
-}
-/* .margin-card{
-  margin-top: 150px;
-} */
 .content-section h2 {
   font-size: 26px;
   color: #f47d02;
@@ -577,5 +552,5 @@ section#about {
 #how-it-works h2{
   font-size: 26px;
   color: #f47d02;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;;
 }
