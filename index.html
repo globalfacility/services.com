@@ -21,31 +21,42 @@
         rel="stylesheet"
       />
       <link rel="stylesheet" href="style.css" />
+      <link rel="icon" href="images/thailand (1).png" type="image/x-icon">
     </head>
+    
     <body>
       <nav class="nav">
-        <div class="logo">TestersHub</div>
-        <ul class="nav-links">
-          <li><a href="#how-it-works">Steps</a></li>
+        <div class="logo"><a href="/index.html">TestersHub</a></div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a id="steps" >Steps</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#pricing">Get Started</a></li>
+          <li><a id="about-us">About Us</a></li>
+          <li><a id="get-started">Get Started</a></li>
         </ul>
       </nav>
+      
 
-      <header class="hero">
-        <div class="hero-content container">
-          <div class="left">
-            <h1>Get 12 Testers for Your Apps and Games</h1>
-            <p>
-              Don’t let closed testing slow you down.<br />
-              Get 12 dedicated testers for 14 days, and focus on what really
-              matters—building and marketing your app.
-            </p>
-            <a href="#pricing" class="btn">Start Now</a>
+      <section>
+            <div class="banner-container container">
+            <div class="left-section">
+              <div class="animated-heading">
+                Get 12 Testers for Your
+                <span id="animated-text"></span><span class="cursor">|</span>
+              </div>                      
+              <p>By strictly following Google’s guidelines and best practices,<br>
+                 we ensure your app fully complies with their policies—helping you smoothly transition to production approval.</p>
+              <button id="learn-more-btn">Learn More</button>
+            </div>
+            <div class="right-section">
+              <img src="/images/banner.png" alt="Right Section Image">
+            </div>
           </div>
-        </div>
-      </header>
+      </section>
 
       <!-- About Section -->
       <section id="about" class=" about container">
@@ -63,16 +74,15 @@
             testing and valuable feedback, helping them achieve first-try
             approvals.
           </p>
-          <button class="primary-btn">About-us</button>
         </div>
         <div class="counter-section">
             <div class="htmega-counter-content">
                 <img src="/images/human-resource.png" alt="" width="50px">
                 <div class="counter">
-                    <p class="htmega-counter-number" data-to-value="100">0</p>
+                    <p class="htmega-counter-number" data-to-value="137">0</p>
                     <p class="htmega-suffix">+</p>
                 </div>
-                <h2 class="htmega-counter-title">Happy Clients</h2>
+                <h2 class="htmega-counter-title">Approved Apps</h2>
             </div>
             <div class="htmega-counter-content">
                 <img src="/images/human-resource.png" alt="" width="50px">
@@ -81,173 +91,273 @@
                     <p class="htmega-suffix">+</p>
                 </div>
                 <h2 class="htmega-counter-title">Happy Clients</h2>
-            </div>
-            <div class="htmega-counter-content">
-                <img src="/images/human-resource.png" alt="" width="50px">
-                <div class="counter">
-                    <p class="htmega-counter-number" data-to-value="100">0</p>
-                    <p class="htmega-suffix">+</p>
-                </div>
-                <h2 class="htmega-counter-title">Happy Clients</h2>
-            </div>
-            <div class="htmega-counter-content">
-                <img src="/images/human-resource.png" alt="" width="50px">
-                <div class="counter">
-                    <p class="htmega-counter-number" data-to-value="100">0</p>
-                    <p class="htmega-suffix">+</p>
-                </div>
-                <h2 class="htmega-counter-title">Happy Clients</h2>
-            </div>
-        </div>
-      </section>
-
-      <!-- Steps Section -->
-      <section id="how-it-works" class="steps container">
-        <h2>How It Works</h2>
-        <div class="steps-grid">
-         
-          <div class="step card">
-            <div class="card-icon">
-              <i class="fas fa-info-circle"></i>
-            </div>
-            <div class="card-content">
-              <h3>Setting up the testers</h3>
-              <p>
-                We’ll ask for tester-level access to your Google Play Console. This ensures
-                everything’s set up and ready to go, so we can add our testers and start the process
-                right away.
-              </p>
-            </div>
-          </div>
-         
-         <div class="image-arrow">
-          <img src="images/arrows.png" alt="">
-         </div>
-      
-          <div class="step card">
-            <div class="card-icon">
-              <i class="fas fa-user-shield"></i>
-            </div>
-            <div class="card-content">
-              <h3>Closed testing starts</h3>
-              <p>
-                Within 24 hours, we’ll get all the testers on board and start testing your app.
-                You’ll be the first to know when we’ve commenced the testing.
-              </p>
-            </div>
-          </div>
-          <div class="step card margin-card">
-            <div class="card-icon">
-              <i class="fas fa-rocket"></i>
-            </div>
-            <div class="card-content">
-              <h3>Ready for production</h3>
-              <p>
-                After 14 days, your app will be ready for production. We'll provide pre-written
-                answers for Google's testing questions—just fill them out and submit. Production
-                access is granted within 2-5 days after review.
-              </p>
-            </div>
-          </div>
-          <div class="image-left-arrow">
-            <img src="images/arrows.png" alt="">
-           </div>
-           <div class="step card margin-card">
-            <div class="card-icon">
-              <i class="fas fa-users"></i>
-            </div>
-            <div class="card-content">
-              <h3>14 Days of Testing</h3>
-              <p>
-                Over 14 days, we’ll test your app daily, ensuring it meets Google’s guidelines for
-                production readiness. During this time, you’ll need to release at least two
-                updates—with or without any changes—essential for approval.
-              </p>
-            </div>
-          </div>
-         
-        </div>
-      </section>
-      
-
-      <!-- Testimonials Section -->
-      <section id="testimonials" class="testimonials container">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonials-grid">
-          <div class="testimonial card">
-            <div class="card-header">
-              <img
-                src="https://api.dicebear.com/6.x/initials/svg?seed=Deepinkcode"
-                alt="Deepinkcode, Canada"
-              />
-              <div class="testimonial-info">
-                <strong>Deepinkcode</strong>
-                <span>Canada</span>
-              </div>
-            </div>
-            <div class="card-content">
-              <p>
-                "TestersHub has done an outstanding job testing my app over the
-                past 14 days to prepare it for Google Play Production. Their
-                communication throughout the process was excellent, with regular
-                updates and swift responses."
-              </p>
-            </div>
-            
-          </div>
-          <div class="testimonial card">
-            <div class="card-header">
-              <img
-                src="https://api.dicebear.com/6.x/initials/svg?seed=Diyorbekhamdamo"
-                alt="Diyorbekhamdamo, Uzbekistan"
-              />
-              <div class="testimonial-info">
-                <strong>Diyorbekhamdamo</strong>
-                <span>Uzbekistan</span>
-              </div>
-            </div>
-            <div class="card-content">
-              <p>
-                "Working with TestersHub has been smooth and professional. The
-                12 testers were thorough, and their feedback helped me fine-tune
-                my app. Highly recommended!"
-              </p>
-            </div>
-            
-          </div>
-          <div class="testimonial card">
-            <div class="card-header">
-              <img
-                src="https://api.dicebear.com/6.x/initials/svg?seed=Cardi7"
-                alt="Cardi7, Mexico"
-              />
-              <div class="testimonial-info">
-                <strong>Cardi7</strong>
-                <span>Mexico</span>
-              </div>
-            </div>
-            <div class="card-content">
-              <p>
-                "Everything was perfect. TestersHub’s team was thorough, and the
-                testers’ feedback was detailed and actionable. They know the
-                review process inside out!"
-              </p>
             </div>
            
+        </div>
+      </section>
+      <!-- Steps Section -->
+     <section id="how-it-works" class="steps container">
+      <h2>How It Works</h2> 
+      <div class="steps-container ">
+        <!-- Step 1 -->
+        <div class="step">
+          <div class=" t-cell t-valign_top t-end" style="padding-bottom:40px; ">
+            <div class="t550__title t-name t-name_lg" field="li_title__5022115272071">Setting up the testers</div> 
+            <div class="t550__descr t-text t-text_xs" field="li_descr__5022115272071">We’ll ask for tester-level access to your Google Play Console. This ensures everything’s set up and ready to go, so we can add our testers and start the process right away.
+            </div>
+          </div>    
+            <div class="t550__numberwrapper t-cell t-valign_top d-none" style="padding-bottom:55px;"> 
+            <div class="t550__number"> 
+              <div class="t550__circle" style=" border-width: 2px; "></div> 
+            <div class="t550__digit t-name t-name_md">1</div> 
+          </div> 
+          <div class="t550__line" style="width: 2px;background: #e8e8e8;"></div>
+         </div>
+          <div></div>
+        </div>
+        <!-- Step 2 -->
+        <div class="step">
+          <div></div>
+          <div class="t550__numberwrapper t-cell t-valign_top d-none" style="padding-bottom:58px;"> 
+            <div class="t550__number"> 
+              <div class="t550__circle" style=" border-width: 2px; "></div> 
+            <div class="t550__digit t-name t-name_md">2</div> 
+          </div> 
+          <div class="t550__line" style="width: 2px;background: #e8e8e8;"></div>
+         </div>
+         <div class=" t-cell t-valign_top t-start" style="padding-bottom:55px;">
+          <div class="t550__title t-name t-name_lg" field="li_title__5022115272071">Closed testing starts</div> 
+          <div class="t550__descr t-text t-text_xs" field="li_descr__5022115272071">Within 24 hours, we’ll get all the testers on board and start testing your app. You’ll be the first to know when we’ve commenced the testing.
+          </div>
+        </div>
+          </div>
+        <!-- Step 3 -->
+        <div class="step">
+          <div class=" t-cell t-valign_top t-end" style="padding-bottom:40px;">
+            <div class="t550__title t-name t-name_lg" field="li_title__5022115272071">14 Days of Testing</div> 
+            <div class="t550__descr t-text t-text_xs" field="li_descr__5022115272071">Over 14 days, we’ll test your app daily, ensuring it meets Google’s guidelines for production readiness. During this time, you’ll need to release at least two updates—with or without any changes—essential for approval.
+            </div>
+          </div>
+          <div class="t550__numberwrapper t-cell t-valign_top d-none" style="padding-bottom:55px;"> 
+            <div class="t550__number"> 
+              <div class="t550__circle" style=" border-width: 2px; "></div> 
+            <div class="t550__digit t-name t-name_md">3</div> 
+          </div> 
+          <div class="t550__line" style="width: 2px;background: #e8e8e8;"></div>
+         </div>
+          <div></div>
+        </div>
+        <!-- Step 4 -->
+        <div class="step">
+          <div></div>
+          <div class="t550__numberwrapper t-cell t-valign_top d-none"> 
+            <div class="t550__number"> 
+              <div class="t550__circle" style=" border-width: 2px; "></div> 
+            <div class="t550__digit t-name t-name_md">4</div> 
+          </div> 
+         </div>
+         <div class=" t-cell t-valign_top t-start" style="padding-bottom:25px;">
+          <div class="t550__title t-name t-name_lg" field="li_title__5022115272071">Ready for production</div> 
+          <div class="t550__descr t-text t-text_xs" field="li_descr__5022115272071">After 14 days, your app will be ready for production. We'll provide pre-written answers for Google's testing questions—just fill them out and submit. Production access is granted within 2-5 days after review.
+          </div>
+        </div>
+      </div>
+      </div>
+     </section>
+      <!-- hire-testers-section -->
+      <section class="hire-testers-section container">
+        <div class="left-section-hire">
+          <h2 class="section-heading">Why You Need to Hire Testers</h2>
+          <p>Testing your Android app can be more challenging than it seems. Here’s how hiring professional testers can save you time, effort, and headaches:
+          </p>
+        </div>
+        <div class="right-section">
+          <div class="card">
+            <h3 class="card-title">Finding Testers Is Hard</h3>
+            <p class="card-description">
+              Gathering 12 or more reliable testers for your app is no easy task. You need a dedicated group of people willing to test your app thoroughly and provide valuable feedback.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Managing Testers Is Even Harder</h3>
+            <p class="card-description">
+              Even if you manage to find testers, coordinating with them to ensure they regularly test the app, report issues, and stay engaged is a time-consuming challenge.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Uninstalls Can Derail Testing</h3>
+            <p class="card-description">
+              Despite your best efforts, testers might accidentally uninstall the app or lose interest. This can lead to incomplete or failed testing cycles, wasting all the effort you’ve put in.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Guidelines Must Be Followed</h3>
+            <p class="card-description">
+              Even if testers stay engaged, they might not follow the necessary testing guidelines. This can result in inaccurate feedback or a failure to meet testing requirements.
+            </p>
+          </div>
+          <div class="card highlight">
+            <h3 class="card-title">We Take Care of It All</h3>
+            <p class="card-description">
+              From gathering and managing testers to ensuring they follow proper guidelines, we handle the entire testing process so you don’t have to.
+            </p>
+          </div>
+          <div class="card highlight">
+            <h3 class="card-title">Get Actionable Feedback</h3>
+            <p class="card-description">
+              We don’t stop at managing testers—we provide detailed, actionable feedback to help you improve your app and get it ready for launch.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      
+       <!-- faq section -->
+       <section id="faq" class="faq-container container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <img class="arrow-icon" src="images/next-arrow.png" alt="" width="20px">
+              How does your testing work?</h3>
+            <p class="faq-answer">
+              We run the testing on 12 separate Google accounts and devices. The devices are opted in for your app's testing program for at least 14 days. The testing involves interacting with your app in a human-like manner—pressing buttons, filling in inputs, etc.
+            </p>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <img class="arrow-icon" src="images/next-arrow.png" alt="" width="20px">
+              What types of apps are eligible for testing?</h3>
+            <p class="faq-answer">
+              We provide testers for all apps submitted to the Google Play Console, as long as they are functional and ready in their initial version.
+            </p>
+          </div>
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <img class="arrow-icon" src="images/next-arrow.png" alt="" width="20px">
+              Do you have a refund policy?</h3>
+            <p class="faq-answer">
+              If you are not satisfied with our service, you can email your refund request to contact@12testersgoogleplay.com. We accept requests up to 5 days after purchase. It would be helpful if you also provide feedback on why you would like a refund, so we can improve the service for others in the future.            </p>
+          </div>
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <h3 class="faq-question">
+            <img class="arrow-icon" src="images/next-arrow.png" alt="" width="20px">
+              How do I prepare my app for testing?</h3>
+            <p class="faq-answer">
+              You need to start a closed testing program in the Google Play Console. We will provide detailed instructions on how to set this up and how to add testers.
+            </p>
+          </div>
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <h3 class="faq-question">
+            <img class="arrow-icon" src="images/next-arrow.png" alt="" width="20px">  
+            Do you guarantee that my app will be approved on Google Play?</h3>
+            <p class="faq-answer">
+              Yes, we provide a guarantee that our testing service will help your app meet Google Play's requirements, and we will continue testing until your app is approved. Our team will work closely with you, offering reports and making sure your app passes all necessary checks for acceptance.            </p>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <h3 class="faq-question">
+            <img class="arrow-icon" src="images/next-arrow.png" alt="" width="20px">
+              I am not familiar with this process, will you guide me on how to proceed?</h3>
+            <p class="faq-answer">
+              Yes, we will provide you with all the guidance you need, including video tutorials, screenshots, and step-by-step instructions to help you understand the process and successfully pass the testing phase. We are here to support you throughout.            </p>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item">
+            <h3 class="faq-question"> 
+              <img class="arrow-icon" src="images/next-arrow.png" alt="" width="20px">
+              What sets your service apart from others?</h3>
+            <p class="faq-answer">
+              We are a team of mobile developers who have developed hundreds of different apps and published them on various app stores. Therefore, we possess extensive knowledge and are well-versed in the procedures. Who better than a programmer themselves to test the app?            </p>
           </div>
         </div>
       </section>
 
+             <!-- Testimonials Section -->
+             <section id="testimonials" class="testimonials container">
+              <h2>What Our Clients Say</h2>
+              <div class="testimonials-grid">
+                <div class="testimonial card">
+                  <div class="card-header">
+                    <img
+                      src="https://api.dicebear.com/6.x/initials/svg?seed=Deepinkcode"
+                      alt="Deepinkcode, Canada"
+                    />
+                    <div class="testimonial-info">
+                      <strong>Deepinkcode</strong>
+                      <span>Canada</span>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p>
+                      "TestersHub has done an outstanding job testing my app over the
+                      past 14 days to prepare it for Google Play Production. Their
+                      communication throughout the process was excellent, with regular
+                      updates and swift responses."
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="testimonial card">
+                  <div class="card-header">
+                    <img
+                      src="https://api.dicebear.com/6.x/initials/svg?seed=Diyorbekhamdamo"
+                      alt="Diyorbekhamdamo, Uzbekistan"
+                    />
+                    <div class="testimonial-info">
+                      <strong>Diyorbekhamdamo</strong>
+                      <span>Uzbekistan</span>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p>
+                      "Working with TestersHub has been smooth and professional. The
+                      12 testers were thorough, and their feedback helped me fine-tune
+                      my app. Highly recommended!"
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="testimonial card">
+                  <div class="card-header">
+                    <img
+                      src="https://api.dicebear.com/6.x/initials/svg?seed=Cardi7"
+                      alt="Cardi7, Mexico"
+                    />
+                    <div class="testimonial-info">
+                      <strong>Cardi7</strong>
+                      <span>Mexico</span>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p>
+                      "Everything was perfect. TestersHub’s team was thorough, and the
+                      testers’ feedback was detailed and actionable. They know the
+                      review process inside out!"
+                    </p>
+                  </div>
+                 
+                </div>
+              </div>
+            </section>
+      
       <!-- Pricing Section -->
       <section id="pricing" class="pricing container">
         <div class="paypal-left-content">
-          <h2>Pricing & Checkout</h2>
-        <p>
-          Ready to get started? Use our seamless PayPal checkout option below to
-          fast-track your app approval.
-        </p>
-        <p id="">12 Testers for Google Play closed testing for 14 days.</p>
-        <strong id="">20.00 USD</strong>
+          <h2>Pricing & Checkout</h2> 
+          <p>Ready to get satrted? Use our seamless PayPal checkout option below to fast-track your app approval</p>
+          <p><strong>What’s Included:</strong><br></p>
+        
+          <li><strong>12 Dedicated Testers:</strong> Professional testers equipped with diverse devices and OS versions.</li>
+          <li><strong>14 Days of Testing:</strong> Comprehensive feedback and insights to perfect your app.</li>
+          <li><strong>Google Play Compliance:</strong> Strict adherence to Google’s guidelines for a seamless production approval process.</li>
       </div>
         <div class="paypal-container">
           <script src="https://www.paypal.com/sdk/js?client-id=BAAiKjt70RFPV9iA95Bxs4aofEqO_0IzVktjovDkwahHDSWoNsEk_Ec5tcvsseFGJvKxH5zUIagnRDL3mA&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
@@ -265,21 +375,23 @@
           </script>
         </div>
       </section>
+     
 
       <!-- Footer -->
       <footer class="footer">
         <div class="container">
           <div class="grid">
             <div class="about-us">
-              <h4>About Us</h4>
-              <p>  By strictly following Google’s guidelines and best practices, we ensure your app fully complies with their policies—helping you smoothly transition to production approval.</p>
+              <div class="logo"><a href="index.html">TestersHub</a></div>
+              <p>  We have a dedicated team of 40+ professional testers spread across various locations and equipped with diverse devices and OS versions. 
+                More than 50+ developers trust TestersHub to deliver seamless app testing and valuable feedback, helping them achieve first-try approvals.</p>
             </div>
       
             <div class="quick-links">
               <h4>Quick Links</h4>
               <ul>
-                <li><a href="#about">About Us</a></li>
-              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a id="about-us">About Us</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
               <li><a href="terms.html">Terms & Conditions</a></li>
               <li><a href="refund-policy.html">Refund Policy</a></li>
               </ul>
@@ -299,13 +411,21 @@
             <p>&copy; 2024 TestersHub. All rights reserved.</p>
           </div>
         </div>
-      </footer>
-      
-      
+      </footer> 
+      <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/677933fa49e2fd8dfe025fbd/1igon63e7';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script--> 
     </body>
   </html>
   <script src="index.js"></script>
 </html>
-<!-- <li><a href="blog.html">Blog</a></li>
-              
-            </ul> -->
