@@ -65,14 +65,14 @@ document.getElementById('learn-more-btn').addEventListener('click', function () 
   document.getElementById('how-it-works').scrollIntoView({ behavior: 'smooth' });
 });
 
-document.getElementById('steps').addEventListener('click', function () {
-  document.getElementById('how-it-works').scrollIntoView({ behavior: 'smooth' });
-});
+// document.getElementById('steps').addEventListener('click', function () {
+//   document.getElementById('how-it-works').scrollIntoView({ behavior: 'smooth' });
+// });
 
 
-document.getElementById('get-started').addEventListener('click', function () {
-  document.getElementById("pricing").scrollIntoView({ behavior: 'smooth' });
-});
+// document.getElementById('get-started').addEventListener('click', function () {
+//   document.getElementById("pricing").scrollIntoView({ behavior: 'smooth' });
+// });
 
 document.getElementById('about-us').addEventListener('click', function () {
   document.getElementById("about").scrollIntoView({ behavior: 'smooth' });
@@ -117,4 +117,55 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+});
+
+window.onload = function () {
+  const container = document.querySelector(".services-container");
+  container.scrollTo({
+    left: container.scrollWidth / 2,
+    behavior: "smooth",
+  });
+};
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".services-container");
+  let scrollAmount = 0;
+  let step = 300; // Adjust scroll speed
+  let interval = 2000; // 2 seconds delay before scrolling
+
+  function autoScroll() {
+    if (scrollAmount < container.scrollWidth - container.clientWidth) {
+      scrollAmount += step;
+    } else {
+      scrollAmount = 0; // Reset scroll to start
+    }
+    container.scrollTo({
+      left: scrollAmount,
+      behavior: "smooth",
+    });
+  }
+
+  setInterval(autoScroll, interval);
+});
+
+
+
+const contactBtn = document.getElementById("contact-btn");
+const contactMenu = document.getElementById("contact-menu");
+
+contactBtn.addEventListener("click", () => {
+    if (contactMenu.style.display === "flex") {
+        contactMenu.style.opacity = "0";
+        setTimeout(() => contactMenu.style.display = "none", 300);
+    } else {
+        contactMenu.style.display = "flex";
+        setTimeout(() => contactMenu.style.opacity = "1", 10);
+    }
+});
+
+// Hide menu when clicking outside
+document.addEventListener("click", (event) => {
+    if (!contactBtn.contains(event.target) && !contactMenu.contains(event.target)) {
+        contactMenu.style.opacity = "0";
+        setTimeout(() => contactMenu.style.display = "none", 300);
+    }
 });
