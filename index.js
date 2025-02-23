@@ -31,7 +31,7 @@ function animateCounter(element, targetValue, duration) {
   });
 
 const animatedText = document.getElementById("animated-text");
-const words = ["Games", "Apps"];
+const words = ["You're Solution"];
 let wordIndex = 0; 
 let letterIndex = 0; 
 let isDeleting = false; 
